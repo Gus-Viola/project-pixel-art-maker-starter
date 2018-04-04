@@ -1,5 +1,8 @@
 body {
     text-align: center;
+    background-color: white;
+    color: black;         /*just to avoid validation errors*/
+
 }
 
 h1 {
@@ -33,8 +36,6 @@ tr {
 
 td {
     width: 20px;
-    background-color: white;
-    color: black;         /*just to avoid validation errors*/
 }
 
 input[type=number] {
