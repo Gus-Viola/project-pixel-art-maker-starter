@@ -1,0 +1,53 @@
+.container {
+
+  transition: width 0.5s;
+  flex-wrap: wrap;
+  width: 100%
+}
+
+@media screen and (min-width: 450px) {
+  h1 {
+    transition: width 0.5s;
+    font-size: 45px;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  h1 {
+    transition: width 0.5s;
+    font-size: 60px;
+  }
+  .w3-container {
+    transition: width 0.5s;
+    font-size: 1.2rem;
+  }
+  .social_icons {
+    transition: width 0.5s;
+    font-size: 2rem;
+    text-shadow: 4px 4px 4px #aaa;
+  }
+  .social_icons li {
+    padding: 20px;
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .container {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .w3-container {
+    transition: width 0.5s;
+    font-size: 1.5rem;
+}
+  .social_icons {
+    transition: width 0.5s;
+    font-size: 2.5rem;
+    text-shadow: 5px 5px 5px #aaa;
+  }
+  .social_icons li {
+    padding: 30px;
+  }
+}

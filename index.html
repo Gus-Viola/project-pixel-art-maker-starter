@@ -1,42 +1,71 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=yes">
-    <title>Pixel Art Maker!</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Monoton">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Pixel Art Maker!</title>
+  <link href="https://fonts.googleapis.com/css?family=VT323" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+  <link href="http://weloveiconfonts.com/api/?family=brandico" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
-    <h1>Lab: Pixel Art Maker</h1>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-theme w3-top w3-left-align w3-large">
+      <h1>Pixel Art Maker</h1>
+    </div>
+  </div>
+  <br><br><br><br><br><br>
+
+  <div class="container">
+
 
     <h2>Choose Grid Size</h2>
     <form id="sizePicker" autocomplete="off">
 
-        Grid Height:
-        <input type="number" id="inputHeight" name="height" min="1" max="50" value="16" required>
-        Grid Width:
-        <input type="number" id="inputWeight" name="width" min="1" max="50" value="16" required>
-        <input type="submit" autofocus>
+      Grid Height:
+      <input type="number" id="inputHeight" name="height" min="1" max="50" value="16" required>
+      <br><br> Grid Width:
+      <input type="number" id="inputWeight" name="width" min="1" max="50" value="16" required>
+      <br><br>
+      <input type="submit" autofocus>
     </form>
 
     <h2>Pick A Color</h2>
     <input type="color" id="colorPicker">
-
-<!--
-    <br> <br>
-    <button type="button" name="button" id="mainButton">Click Me</button> -->
-
     <h2>Design Canvas</h2>
     <table id="pixelCanvas"></table>
 
-    <script
-      type="text/javascript"
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous">
-    </script>
-    <script src="designs.js"></script>
+  </div>
+
+  <br><br><br>
+  <footer id="myFooter">
+    <div class="w3-container w3-theme-l2 w3-padding-32">
+      <h4>Design by Gus Viola, inspired by W3C templates</h4>
+      <ul class="social_icons">
+        <li> <a class="brandico-linkedin-rect" href="https://www.linkedin.com/in/gusviola"></a> </li>
+        <li> <a class="brandico-facebook-rect" href="https://www.facebook.com/gustavo.viola.39"> </a> </li>
+        <li> <a class="brandico-github-text" href="https://github.com/Gus-Viola"></a> </li>
+        <li> <a class="brandico-twitter-bird" href="https://twitter.com/@gusviola72"> </a> </li>
+      </ul>
+
+    </div>
+
+    <div class="w3-container w3-theme-l1">
+    </div>
+  </footer>
+
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous">
+  </script>
+  <script src="js/designs.js"></script>
 
 </body>
+
 </html>

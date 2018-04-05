@@ -1,0 +1,178 @@
+body {
+  text-align: center;
+  background-color: white;
+  color: black;
+  /*Assigned value to color to avoid validation errors*/
+  font-family: 'VT323', 'Ubuntu', 'Open Sans', sans-serif;
+}
+
+h1 {
+  font-family: 'VT323', 'Ubuntu', 'Open Sans', sans-serif;
+  font-size: 30px;
+  margin: 0.2em;
+}
+
+h2 {
+  margin: 1em 0 0.25em;
+}
+
+h2:first-of-type {
+  margin-top: 0.5em;
+}
+
+table, tr, td {
+  border: 1px solid black;
+}
+
+table {
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+
+tr {
+  height: 20px;
+}
+
+td {
+  width: 20px;
+}
+
+input[type=number] {
+  width: 6em;
+}
+
+/*
+From my Udacity "Portfolio" project
+*/
+.social_icons {
+  display: flex;
+  /*if removed, icons are not displayed*/
+  margin: 0 auto;
+  /*if I want to center*/
+  width: fit-content;
+  /*if I want to center*/
+  -webkit-padding-start: 0px;
+  /* User agent stylesheet puts a value of 40px
+  forcing my icons off-center. This vendor extension,
+  although unknown by w3c validator, fixes this
+  issue.*/
+  font-size: 1.5rem;
+  text-shadow: 3px 3px 3px #aaa;
+  text-decoration: none;
+}
+
+.social_icons li {
+  list-style-type: none;
+  /*removes bullet points*/
+  float: left;
+  padding: 10px;
+  /*nice padding between social_icons*/
+}
+
+.social_icons a {
+  text-decoration: none;
+  color: black;
+}
+
+[class*="brandico-"]:before {
+  font-family: 'brandico', sans-serif;
+}
+
+/*
+w3 formatting straight out of w3c templates
+https://www.w3schools.com/w3css/4/w3.css
+https://www.w3schools.com/lib/w3-theme-black.css
+*/
+.w3-container, .w3-panel {
+  padding: 0.01em 16px
+}
+
+.w3-panel {
+  margin-top: 16px;
+  margin-bottom: 16px
+}
+
+.w3-theme-l2 {
+  color: #fff !important;
+  background-color: #666666 !important
+}
+
+.w3-padding-32 {
+  padding-top: 32px !important;
+  padding-bottom: 32px !important
+}
+
+.w3-bar {
+  width: 100%;
+  overflow: hidden
+}
+
+.w3-center .w3-bar {
+  display: inline-block;
+  width: auto
+}
+
+.w3-bar .w3-bar-item {
+  padding: 8px 16px;
+  float: left;
+  width: auto;
+  border: none;
+  display: block;
+  outline: 0
+}
+
+.w3-bar .w3-dropdown-hover, .w3-bar .w3-dropdown-click {
+  position: static;
+  float: left
+}
+
+.w3-bar .w3-button {
+  white-space: normal
+}
+
+.w3-bar-block .w3-bar-item {
+  width: 100%;
+  display: block;
+  padding: 8px 16px;
+  text-align: left;
+  border: none;
+  white-space: normal;
+  float: none;
+  outline: 0
+}
+
+.w3-bar-block.w3-center .w3-bar-item {
+  text-align: center
+}
+
+.w3-block {
+  display: block;
+  width: 100%
+}
+
+.w3-theme {
+  color: #fff !important;
+  background-color: #000000 !important
+}
+
+.w3-top, .w3-bottom {
+  position: fixed;
+  width: 100%;
+  z-index: 1
+}
+
+.w3-top {
+  top: 0
+}
+
+.w3-bottom {
+  bottom: 0
+}
+
+.w3-left-align {
+  text-align: left !important
+}
+
+.w3-large {
+  font-size: 18px !important
+}
